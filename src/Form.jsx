@@ -123,19 +123,19 @@ function Form() {
                 <table className="table table-striped">
             <thead>
                     <tr className="text-center bg-secondary">
-                        <th>Id no.</th>
-                        <th>Last Name</th>
-                        <th>First Name</th>
+                        {/* <th>Id no.</th> */}
+                        <th>Name</th>
                         <th>Purpose of Visit</th> 
                         <th>Date</th> 
+                        <th>...</th>
                     </tr>
             </thead>
             <tbody className="text-center">
                {visitors.map((visitor, index) => {
               return (
                 <tr key={index}>
-                  <td>{visitor.lname}</td>
-                  <td>{visitor.fname}</td>
+                  <td>{visitor.lname}, {visitor.fname}</td>
+                  {/* <td>{visitor.fname}</td> */}
                   <td>{visitor.purpose}</td>
                   <td>{visitor.date}</td>
                     <td>
